@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Particles Login</title>
+</head>
+
+<body>
+    <div id="particles-js">
+        <div id="login">
+            <h1>Member Login </h1>
+            <br><br>
+            <form>
+                <div class="username">
+                    <div class="error">Enter correct username</div>
+                    <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                    <input type="text" placeholder="Username" id="email">
+                </div>
+                <div class="password">
+                    <div class="error-pass">Enter correct password</div>
+                    <span><i class="fa fa-lock"></i></span>
+                    <input type="password" placeholder="Enter Password" id="password">
+                </div>
+                <input type="submit" value="Login" id="btn">
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function () {
+            console.log('Particles.json loaded...')
+        })
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

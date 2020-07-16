@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#particles-js {
+    background:linear-gradient(45deg, #2F1C53, #A46DFF, #F6D1FD);
+    height: 100vh;
+}
+
+#login {
+    position: absolute;
+    top:30%;
+    left: 30%;
+    height: 350px;
+    width: 600px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#login h1 {
+    margin: 10px;
+}
+
+.username,
+ .password {
+    padding-bottom: 15px;
+}
+
+input:focus {
+    outline:none;
+}
+
+.username input,
+.password input{
+    width: 400px;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ccc;
+    margin: 5px;
+}
+
+.password input {
+    margin-top: 15px;
+}
+
+#btn {
+    border: none;
+    margin: 20px;
+    margin-left: 25px;
+    background-color: green;
+    color: #fff;
+    width: 430px;
+    padding:15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    position: absolute;
+    top:87px;
+    left: 120px;
+    padding-bottom: 10px;
+    visibility: hidden;
+}
+
+.error-pass {
+    color: red;
+    position: absolute;
+    top:170px;
+    left: 120px;
+    padding-bottom: 10px;
+    visibility: hidden;
+}
+
+@media(max-width:1024px) {
+    #login {
+        top: 490px;
+        left: 230px;
+    }
+}
+
+@media(max-width:400px) {
+    #particles-js {
+        width: 250vw;
+        height: 300vh;
+    }
+
+    #login {
+        top:900px;
+        left:200px;
+    }
+
+}
